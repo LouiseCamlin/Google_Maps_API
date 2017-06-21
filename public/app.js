@@ -15,6 +15,8 @@ var initialize = function(){
   var goTo = function(){
     var fiji = {lat: -17.83, lng: 177.98};
     mainMap.googleMap.setCenter(fiji);
+    mainMap.addMarker(fiji);
+    mainMap.addInfoBox(1, "Fiji");
   }
 
   var takeButton = document.querySelector("#take-button");
